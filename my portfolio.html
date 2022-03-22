@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Russo+One'>
+    <link href="http://fonts.cdnfonts.com/css/astro-armada" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <div id='home1'>
@@ -24,27 +26,27 @@
                 <ul class="navbar">
                     <li><a href="#home1"><i id="forhide" class="fas fa-home"></i>Home</a></li>
                     <li><a href="#about1"><i id="forhide" class="fas fa-address-card"></i>About</a></li>
-                    <li><a href="#blog"><i id="forhide" class="fas fa-blog"></i>Blog</a></li>
-                    <li><a href="#service"><i id="forhide" class="fab fa-servicestack"></i>Service</a></li>
+                    <li><a href="./block and service file/index.html"><i id="forhide" class="fas fa-blog"></i>Blog</a></li>
+                    <!-- <li><a href="#service"><i id="forhide" class="fab fa-servicestack"></i>Service</a></li> -->
                     <!-- <li><a href="">Something</a></li> -->
                     <li><a href="#contact"><i id="forhide" class="fas fa-id-badge"></i></i>Contact</a></li>
                 </ul>
             </nav>
 
-            <img style="position: absolute; width: 300px; height: 300px; margin-top: -50px;" src="./sign.png" class="signimg">
+            <img style="position: absolute; width: 300px; height: 300px; margin-top: -50px;" src="./images/sign.png" class="signimg">
             <img class="two" src="https://cdn.pixabay.com/photo/2017/07/13/17/49/square-background-2501276_1280.png" alt="" >
             <!-- <img class="three" src="3 (2).png" alt=""> -->
-            <img class="four" src="./php-development.png" alt="">
+            <img class="four" src="./images/php-development.png" alt="">
             <div class="icon-menu">
                 <div><a href="#home1" style="text-decoration: none;"><i class="fas fa-home"></i><b>Home</b></a></div>
-                <div><a href="#about1" style="text-decoration: none;"><i class="fas fa-address-card"></i><b>About<i class="fab fa-youtube"></i></b></a></div>
+                <div><a href="#about1" style="text-decoration: none;"><i class="fas fa-address-card"></i><b>About</b></a></div>
                 <div><a href="#blog" style="text-decoration: none;"><i class="fas fa-blog"></i><b>Blog</b></a></div>
                 <div><a href="#service" style="text-decoration: none;"><i class="fab fa-servicestack"></i><b>Service</b></a></div>
                 <div><a href="#contact" style="text-decoration: none;"><i class="fas fa-id-badge"></i><b>Contact</b></a></div>
             </div>
             <div id="home">
                 <!-- home section start -->
-                <h1><b class="b1">Hi, I'M</b> <br><b>Zaw Htet</b></h1>
+                <h1 class="introsectionh1"><b class="b1">Hi, I'M</b> <br><b introsectionh2>Zaw Htet</b></h1>
                 <p>Welcome to my portfolio website! I am a website programmer who can support bussiness companies' websites and built a bussiness site alone.</p>
                 <div class="youtube">
                     <button class="click" ><i class="fab fa-youtube"></i><span>YOUTUBE CHANNEL</span></button>
@@ -156,7 +158,7 @@
             </div>
             
 
-            <div class="c1">
+            <div style="margin: 0" class="c1">
                 <h2 style="border: none;">Location</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487105.3119408778!2d95.59284309078014!3d17.483139668443567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c11a21459443c3%3A0xb1f0e3621bf7eaf1!2sTaikkyi%2C%20Myanmar%20(Burma)!5e0!3m2!1sen!2sfr!4v1638431308888!5m2!1sen!2sfr" width="500" height="250" style="border:2px solid blue;" allowfullscreen="" loading="lazy"></iframe>
             </div>
@@ -173,9 +175,9 @@
     <div class="footer">
         <div class="subfooter">
 			<div class="box">
-				<img id="footerimage" style="width: 550px; height: 250px;" src="./12-removebg-preview.png" alt="">
+				<img id="footerimage" style="width: 550px; height: 250px;" src="./images/12-removebg-preview.png" alt="">
 			</div>
-			<div class="box">
+			<div class="box box1">
 				<h3>Quick Link</h3>
 				<a href="#"><i class="fas fa-home"></i>Home</a>
 				<a href="#"><i class="fas fa-address-card"></i>About</a>
@@ -183,7 +185,7 @@
 				<a href="#"><i class="fab fa-servicestack"></i>Service</a>
 				<a href="#"><i class="fas fa-id-badge"></i>Contact</a>
 			</div>
-			<div class="box" id="boxl">
+			<div class="box box2" id="boxl">
 				<h3>Social App Links</h3>
 				<a href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
 				<a href="#"><i class="fab fa-facebook-messenger"></i>Instagram</a>
@@ -199,46 +201,17 @@
         </div>
     </div>
 
+    <!-- top link  -->
+    <a href="#home" class="scroll-link top-link">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
 
 
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
-    <script>
-        let menu = document.querySelector('#menu-bar');
-	    let navbar = document.querySelector('.navbar');
-
-        window.onscroll = ()=>{
-            menu.classList.remove('fa-times');
-            navbar.classList.remove('open');
-        }
-
-        menu.addEventListener('click', () =>{
-            menu.classList.toggle('fa-times');
-            navbar.classList.toggle('open');
-        });
-
-
-
-
-    //    const menuBtn = document.querySelector('.menubtn');
-    // const menuBurger = document.querySelector('.menuburger');
-
-    // let showMenu = false;
-
-    // menuBtn.addEventListener('click', toggleMenu);
-
-    // function toggleMenu(){
-    //     if(!showMenu) {
-    //         menuBurger.classList.add('open');
-
-    //         showMenu = true;
-    //     } else {
-    //         menuBurger.classList.remove('open');
-
-    //         showMenu = false;
-    //     }
-    // }
+    <script src="app.js">
+        
     </script>
 </body>
 </html>

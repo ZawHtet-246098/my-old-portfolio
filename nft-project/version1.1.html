@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+</head>
+<body>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active d-none d-lg-block" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="d-none d-lg-block" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="d-none d-lg-block" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active w-100">
+            <div style="width: 100vw; height: 650px; object-fit: cover; background: url(https://d1avenlh0i1xmr.cloudfront.net/dcc447f1-5100-49f0-b78a-c7f7c3ba35db/twinkling-of-stars.gif);"></div>
+          </div>
+          <div class="carousel-item">
+            <img style="width: 100vw; height: 650px; object-fit: cover;" src="https://www.deltecbank.com/wp-content/uploads/2021/08/iStock-1310473938-scaled.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="width: 100vw; height: 650px; object-fit: cover;" src="./photo/bg1.jpg" class="d-block img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span style="margin-right: 100px;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span style="margin-left: 50px;" class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+
+
+
+      <!-- login form  -->
+      <!-- <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+        
+
+
+      
+      
+      </div> -->
+
+
+
+
+      <div class="container-fluid" id="wholeHome" style="height: 100vh; position: absolute;">
+        <nav id="lagenavone" class="navbar text-white">
+          <div style="background-color: black;" class="container-fluid">
+            <div class="h2" style="margin-left: 1rem;">Logo</div>
+            <form class="col-9 d-none d-lg-block" action="/action_page.php">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="sth">
+                <span class="input-group-text">search</span>
+              </div>
+            </form>
+            <div id="navbarloginandmenu">
+              <div style="margin-right: 1rem">
+              <a href="login-form/index.html"><i id="login-btn" class="fa-solid fa-user-plus h3 text-white justify-content-md-end"></i></a>
+            </div>
+            <button
+              id="navbarmenu"
+              class="navbar-toggler p-0 border-0 collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              >
+              <span class="toggler-icon top-bar d-block d-md-block d-lg-none"></span>
+              <span class="toggler-icon middle-bar d-block d-md-block d-lg-none"></span>
+              <span class="toggler-icon bottom-bar d-block d-md-block d-lg-none"></span>
+            </button>
+            </div>
+            
+          </div>
+            
+
+          <div 
+          class="collapse navbar-collapse"
+          id="navbarNav"
+        >
+          <ul>
+            <li>
+              <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="#roadmap">Roadmap</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="#nft-gallery">Nft-Gallery</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="#sales">Sales</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="#connect-metamask">Connect-Metamask</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="#staking-reward">Staking-Reward</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" aria-current="page" href="#p2e-game">P2E-game</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="#teams">Teams</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="#our-vision">Our-Vision</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        </nav>
+        <div id="largenavtwo" class="secondary-navbar container-fluid text-white d-none d-lg-block">
+            <ul>
+              <li><a style="text-decoration: none;" class="text-white" href="#wholeHome">Home</a></li>
+              <li><a style="text-decoration: none;" class="text-white" href="#roadmap">Roadmap</a></li>
+              <li><a style="text-decoration: none;" class="text-white"href="#nft-gallery">Nft-Gallery</a></li>
+              <li>Sales</li>
+              <li>Connect-Metamask</li>
+              <li>Staking-Rewards</li>
+              <li>P2E-game</li>
+              <li>Teams</li>
+              <li>Our-Vision</li>
+              <!-- <li>Discord</li>
+              <li>Twitter</li> -->
+              <li>FAQ</li>
+            </ul>
+        </div>
+        
+        <div id="home">
+          <div class="home1">
+            <h1>Discover And Collect</h1>
+            <h1>Your Favourite Digital</h1>
+            <h2>NTFs Art</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi alias nesciunt facere iure odit quos similique dolor, molestias numquam </p>
+            
+            <button style="border-radius: 3px;" class="p-md-1 p-lg-3 "><i class="fa-brands fa-hive"></i>Explore more</button>
+            <button style="border-radius: 3px;" class="p-md-1 p-lg-3"><i class="fa-brands fa-hive"></i>Watch NFT</button>
+          </div>
+          <div class="home2 d-none d-md-block d-lg-block">
+            <img style="max-width: 400px; max-height: 400px;" src="./photo/home2.png" alt="">
+          </div>
+        </div>
+      </div>
+    
+<!-- Roadmap section  -->
+      <div id="roadmap">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 185">
+          <path fill="#000b76" fill-opacity="1" d="M0,64L48,85.3C96,107,192,149,288,144C384,139,480,85,576,96C672,107,768,181,864,181.3C960,181,1056,107,1152,90.7C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+        </svg>
+
+         <div class="container-fluid">
+          <div class="row ">
+
+            <div style="background-color: transparent;" class='col-md-6 col-lg-6 col-sm-12 text-start p-5 my-auto'>
+              <h1 id="roadmaph1">Roadmap Section</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem sapiente ab incidunt nesciunt fugit qui vero laudantium eveniet sit aperiam dicta, et rem adipisci ipsum, aut rerum excepturi cupiditate.</p>
+              <button class="btn btn-outline-primary Regular shadow">See More</button>
+            </div>
+
+            <div class="col-md-6 col-lg-6 d-none col-md-6 text-end  d-md-block p-4 ">
+              <img class="regular shadow" style="border-radius: 3px;" width="500px" src="https://slidebazaar.com/wp-content/uploads/2017/07/Roadmap-with-success-achievement-Keynote-and-Powerpoint-template.jpg" alt="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+        <div id="roadmapsectiontwo" class="container-fluid justify-content-around py-5">
+            <div style="text-align: center; background: white; max-width: 334px; height: 410px; border: 2px solid rgb(12, 2, 2); padding: 0;" class="col-10 col-lg-4 mb-md-0 mb-3">
+              <div>
+                <img style="max-width: 100%;" src="https://miro.medium.com/max/922/1*LwJRRx4WxmvFRVUVNHVz6Q.png" alt="">
+              </div>
+              <div class="pt-3 px-3">
+                <h5 class="title">Technology roadmap</h5>
+                  <p class="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Readmore...</a>
+              </div>
+            </div>
+            <!-- <div class="col-md-6 col-lg-4 text-center">
+              <div class="card mb-3 mx-auto" style=" width: 21rem;">
+                <img src="https://miro.medium.com/max/922/1*LwJRRx4WxmvFRVUVNHVz6Q.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Outcome-based roadmap</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Readmore...</a>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="col-md-4 text-center">
+              <div class="card mb-3 mx-auto" style="width: 21rem;">
+                <img src="https://www.productplan.com/uploads/Screen-Shot-2021-09-13-at-9.58.40-AM.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Technology roadmap</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Readmore...</a>
+                </div>
+              </div>
+            </div> -->
+
+            <div style="text-align: center; background: white; max-width: 334px; height: 410px; border: 2px solid rgb(0, 0, 0); padding: 0;" class="d-lg-none col-10 col-lg-4" >
+              <div>
+                <img style="max-width: 100%;" src="https://images.ctfassets.net/h6luvadnbip0/6ha3LXhhk3GoAqpoTZxKtx/e3f4e5583c114d9df63ce16399a470b1/Objective-led_roadmap.png?w=800&q=90" alt="">
+              </div>
+              <div class="pt-3 px-3">
+                <h5 class="title">Objective-led roadmap</h5>
+                  <p class="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Readmore...</a>
+              </div>
+            </div>
+
+            <div style="text-align: center; background: white; max-width: 334px; height: 510px; border: 2px solid rgb(10, 6, 6); padding: 0;" class="col-12 col-lg-4 mt-lg-0 mt-3">
+              <div>
+                <img style="max-width: 100%;" src="https://www.productplan.com/uploads/Screen-Shot-2021-09-13-at-9.58.40-AM.png" alt="">
+              </div>
+              <div class="pt-4 px-3">
+                <h5 class="title">Technology roadmap</h5>
+                  <p class="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Readmore...</a>
+              </div>
+            </div>
+
+            <div style="text-align: center; background: white; max-width: 334px; height: 410px; border: 2px solid rgb(0, 0, 0); padding: 0;" class="d-none d-lg-block col-6 col-lg-4">
+              <div>
+                <img style="max-width: 100%;" src="https://images.ctfassets.net/h6luvadnbip0/6ha3LXhhk3GoAqpoTZxKtx/e3f4e5583c114d9df63ce16399a470b1/Objective-led_roadmap.png?w=800&q=90" alt="">
+              </div>
+              <div class="pt-3 px-3">
+                <h5 class="title">Objective-led roadmap</h5>
+                  <p class="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Readmore...</a>
+              </div>
+            </div>
+      </div>
+      </div>
+
+
+
+      
+     
+
+
+      <!-- Nft-Gallery section  -->
+      <div id="nft-gallery">
+        <div class="container mx-md-auto">
+          <div class="row">
+          <div class="gallery col-12 col-xs-12">
+              <h1 class="gallery-title">NFT-Gallery</h1>
+          </div>
+
+          <div align="center">
+              <button class="btn btn-default filter-button" data-filter="all">All</button>
+              <button class="btn btn-default filter-button" data-filter="tranding">Tranding</button>
+              <button class="btn btn-default filter-button" data-filter="bargain">Bargain</button>
+              <button class="btn btn-default filter-button" data-filter="expensive">Expensive</button>
+              <button class="btn btn-default filter-button" data-filter="normal">Normal</button>
+          </div>
+          <br/>
+
+
+
+              <div class="gallery_product col-lg-4 col-md-6 mx-sm-auto col-6 filter tranding">
+                  <button class="btn btn-primary position-absolute"><i class="p-2 fa-solid fa-cart-shopping"></i>Buy Now</button>
+                  <img src="https://imageio.forbes.com/specials-images/imageserve/6170e01f8d7639b95a7f2eeb/Sotheby-s-NFT-Natively-Digital-1-2-sale-Bored-Ape-Yacht-Club--8817-by-Yuga-Labs/0x0.png?fit=bounds&format=png&width=960" class="img-responsive">
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-6 mx-auto col-6 filter bargain">
+                <button class="btn btn-primary position-absolute"><i class="p-2 fa-solid fa-cart-shopping"></i>Buy Now</button>
+                  <img src="https://www.artnews.com/wp-content/uploads/2022/01/unnamed-2.png?w=631" class="img-responsive">
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-6 mx-auto col-6 filter tranding">
+                <button class="btn btn-primary position-absolute"><i class="p-2 fa-solid fa-cart-shopping"></i>Buy Now</button>
+                  <img src="https://www.cnet.com/a/img/FOblZHSSQ9sBlVbdd0qIxrLRIAI=/940x0/2021/12/13/d319cda7-1ddd-4855-ac55-9dcd9ce0f6eb/unnamed.png" class="img-responsive">
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-6 mx-auto col-6 filter normal">
+                <button class="btn btn-primary position-absolute"><i class="p-2 fa-solid fa-cart-shopping"></i>Buy Now</button>
+                  <img src="https://lh3.googleusercontent.com/zXcV_BJqVPf0IZZUrffjKD_cZpgFzYD8jsUYgZwGzhyhTF5hmQrOGMQQ7mEEjNUujRvtLeemeO2bpl4HL2uuoLrLMwpWmAZCgsU66A=w1400-k" class="img-responsive">
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-6 mx-auto col-6 filter expensive">
+                <button class="btn btn-primary position-absolute"><i class="p-2 fa-solid fa-cart-shopping"></i>Buy Now</button>
+                  <img src="https://news.artnet.com/app/news-upload/2021/09/Yuga-Labs-Bored-Ape-Yacht-Club-4466.jpg" class="img-responsive">
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-6 mx-auto col-6 filter normal">
+                <button class="btn btn-primary position-absolute"><i class="p-2 fa-solid fa-cart-shopping"></i>Buy Now</button>
+                  <img src="https://assets.thevalue.com/ad81a47725585b993585b3a821d0ec02c7435662/mobile/31dd3295b8e3e1a81221ebe94f68fa96314512c8.jpg?1630572123" class="img-responsive">
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-6 mx-auto col-6 filter expensive">
+                <button class="btn btn-primary position-absolute"><i class="p-2 fa-solid fa-cart-shopping"></i>Buy Now</button>
+                  <img src="https://lh3.googleusercontent.com/lFLlyQlWiErloehNQ3qWlng_gYtPo5wwf26FWmnujjCeWYigweBisABwyy1j7XFNqO_lLFf8p4fttoiiu-qd0VlfpZ_hz1vOX9m-NA=w600" class="img-responsive">
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-6 mx-auto col-6 filter normal">
+                <button class="btn btn-primary position-absolute"><i class="p-2 fa-solid fa-cart-shopping"></i>Buy Now</button>
+                  <img src="https://lh3.googleusercontent.com/WS-lxut0lzTPDHadfWqbzRwFZAYsFs4siRVKUQv6Nov6UGZcNL-KXGsCDoXCfcd4rGv9TTnJ2iO50rKN3KMoAtQ-8lj9c6CXeT4iEn0=w600" class="img-responsive">
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-6 mx-auto col-6 filter normal">
+                <button class="btn btn-primary position-absolute"><i class="p-2 fa-solid fa-cart-shopping"></i>Buy Now</button>
+                  <img src="https://cryptopotato.com/wp-content/uploads/2022/01/img1_bayc.png" class="img-responsive">
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-6 mx-auto col-6 filter tranding">
+                <button class="btn btn-primary position-absolute"><i class="p-2 fa-solid fa-cart-shopping"></i>Buy Now</button>
+                  <img src="https://lh3.googleusercontent.com/df6xbhgDcNASXTeuhcojjDauRzn1WR44rSMTmcKhJW0aKkxz1cA6Cj3mT7QIdVpJjWHNtQ0XJWaM_2mXkJjQ2ESDtq6vEENKbgsknHo=w600" class="img-responsive">
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-6 mx-auto col-6 filter expensive">
+                <button class="btn btn-primary position-absolute"><i class="p-2 fa-solid fa-cart-shopping"></i>Buy Now</button>
+                  <img src="https://lh3.googleusercontent.com/mPpOei8345NWTVxmzN5wv_jU4xWsG_KZWBH28pFMuKdLQz-hq5AzeKMC3zA9-dMwZdKiZ6tvvpC4uzZzgYScpi6jEWTen3VUgrmjgw=w1400-k" class="img-responsive">
+              </div>
+
+              <div class="gallery_product col-lg-4 col-md-6 mx-auto col-6 filter bargain">
+                <button class="btn btn-primary position-absolute"><i class="p-2 fa-solid fa-cart-shopping"></i>Buy Now</button>
+                  <img src="https://preview.redd.it/tpxvny1fbdv61.png?auto=webp&s=2c624ad00989dc058a34d62a8730061d43a05df4" class="img-responsive">
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- footer section  -->
+      <div class="bg-black">
+        <div class="container pt-5 list-unstyled">
+          <div class="row text-white">
+            <div class="col-lg-4 col-sm-12">
+                
+                <h5>COMPANY NAME</h5><br>
+                <P>Here you can rows and columns to organize your footer content.Lorem ipsum dolor sit amet,consectertur adipisicing elit.
+                </P>
+            </div>
+            <div class="col">
+              <h5>PRODUCTS</h5><br>
+                <li>MDBoootstrap</li><br>
+                <li>MDWordPress</li><br>
+                <li>BrandFlow</li><br>
+                <li>Bootstrap</li>
+                <li>Angular</li>
+            </div>
+            <div class="col ">
+              <h5>USEFUL LINKS</h5><br>
+                <li>Your Account</li><br>
+                <li>Become an</li>
+                <li>Affiliate</li><br>
+                <li>Shipping Rates</li><br>
+                <li>Help</li><br>
+            </div>
+            <div class="col ">
+              <h5>CONTACT</h5><br>
+                <i class="fa-solid fa-house-chimney pr-5"></i><li>New York,NY 10012</li>
+                <i class="fa-solid fa-envelope"></i><li>info@example.com</li>
+                <i class="fa-solid fa-phone"></i><li>+01 234 567 88</li>
+                <i class="fa-solid fa-chart-line"></i><li>+01 234 567 89</li>
+            </div>
+          </div>
+          <br><br>
+          <div class="row">
+            <div class="text-white col-6">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vel quis voluptates! Cumque, veniam dignissimos delectus quasi fugit vero illo aspernatur.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ducimus debitis eligendi blanditiis quo et asperiores! Unde nostrum eligendi voluptatum!</li>
+            </div>
+            <div class="text-white col-6 h1 pt-5 ml-5">
+              <i class="fa-brands fa-google-plus p-2"></i>
+              <i class="fa-brands fa-facebook p-2"></i>
+              <i class="fa-brands fa-twitter p-2"></i>
+              <i class="fa-brands fa-linkedin-in p-2"></i>
+              <i class="fa-brands fa-telegram p-2"></i>
+            </div>
+          </div>
+          
+          
+          <div class="text-white container">
+            <p  id="footer" class="mx-lg-auto mb-0 text-end">2022 Copyright : Mr-Zaw</p>
+          </div>
+        </div>
+       
+      </div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="index.js">
+    
+</script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

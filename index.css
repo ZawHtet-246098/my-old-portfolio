@@ -2,6 +2,10 @@ body{
     margin: 0;
     overflow-x: hidden;
     /* box-sizing: border-box; */
+    position: relative;
+}
+html{
+    scroll-behavior: smooth;
 }
 .container{
     /* position: absolute;
@@ -9,7 +13,7 @@ body{
     left: 0px;
     right: 0px;
     bottom: 0px; */
-    background: url(./187206.jpg);
+    background: url(./images/187206.jpg);
     background-size: cover;
     /* width: 100%; */
     /* height: 105vh; */
@@ -21,7 +25,7 @@ body{
     color: #fff;
     border: 2px solid #fff;
     border-radius: .5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: .5rem 1.2rem;
     cursor: pointer;
     display: none;
@@ -44,6 +48,7 @@ nav{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: block;
+    font-family: 'Astro Armada', sans-serif;
 }
 nav a{
     color: white;
@@ -116,7 +121,7 @@ nav ul li:hover a::after{
     margin-left: 9rem;
     position: relative;
     -webkit-text-stroke: 5px transparent;
-    background: url(./back.png);
+    background: url(./images/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 10s linear infinite;
@@ -323,8 +328,9 @@ nav ul li:hover a::after{
         height: 210px; */
         }
     #menu-bar {
+        font-size: 1rem;
         display: inline-flex;
-        margin-top: 0.9rem;
+        margin-top: 1.3rem;
         margin-left: 1rem;
         /* margin-left: 10rem; */
         }
@@ -358,7 +364,7 @@ nav ul li:hover a::after{
         font-size: 5rem;
         }
     #home p{
-        width: 70%;
+        width: 85%;
         font-size: 1.3rem;
         margin-top: 3rem;
         margin-bottom: 4rem;
@@ -368,12 +374,10 @@ nav ul li:hover a::after{
     .zawportfolio{
         width: 500px;
         margin-right: 0;
+        font-size: 1.5rem;
     }
     nav{
         margin-right: 0;
-    }
-    #home{
-        margin-left: 1rem;
     }
     #home1 .container nav a{
         color: white;
@@ -382,15 +386,21 @@ nav ul li:hover a::after{
         font-size: 4rem;
         }
     #home p{
+        width: 80%;
         font-size: 1.1rem;
         margin-top: 3rem;
         margin-bottom: 4rem;
+         }
+}
+@media (max-width: 500px){
+    #home{
+        margin-left: 10px;
+        height: 120vh;
     }
-    .about1 .second{
-        max-width: 400px;
-        max-height: 320px;
+    #home p{
+        width: 100%;
+        margin-right: 0;
     }
-
 }
 
 
@@ -399,7 +409,7 @@ nav ul li:hover a::after{
 /* About section  */
 .about{
     /* background: rgba(201, 201, 198, 0.596); */
-    background-image: url(./big3.jpg);
+    background-image: url(./images/big3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -421,8 +431,7 @@ nav ul li:hover a::after{
 }
 .about1 .card{
     /* margin-top: 5rem; */
-    /* padding-right: 5rem; */
-    min-width: 350px;
+    padding-right: 5rem;
 
     border-right: .1rem solid rgb(247, 240, 240);
 }
@@ -531,6 +540,10 @@ nav ul li:hover a::after{
 @media (max-width: 1040px){
     .about .card{
         /* padding-right: 0; */
+        padding: 0;
+        justify-content: center;
+        border: none;
+        width: 400px;
     }
     .about1 #card2{
         border-right: none;
@@ -540,7 +553,7 @@ nav ul li:hover a::after{
      
   }  
   .card h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .about .about1 div ul li {
     font-size: 1.3rem;
@@ -567,21 +580,36 @@ nav ul li:hover a::after{
         margin: auto;
     }
 }
-/* @media (max-width: 920px){
-    .card{ */
-        /* margin-left: -3rem; */
-     /* } 
+@media (max-width: 550px){
+    .about .card{
+        /* padding-right: 0; */
+        padding: 0;
+        justify-content: center;
+        width: 100%;
+        
+    }
+}
+ @media (max-width: 920px){
+    .card{ 
+         margin-left: -3rem;
+      } 
      
      .about .about1 .second{
          display: none;
      }
      .personal .first{
-        margin-left: 4rem;
+        margin-left: 2rem;
         width: 80%;
         align-items: center;
     }
     }
-@media (max-width: 550px){
+
+    @media (max-width: 450px){
+        .personal .first{
+            margin-left: 20px;
+        }
+    }
+/* @media (max-width: 550px){
     #card1{
         display: block;
     }
@@ -599,7 +627,7 @@ nav ul li:hover a::after{
         width: 40%;
 
     }
-} */
+}  */
 
 
 
@@ -620,7 +648,6 @@ nav ul li:hover a::after{
     align-items: center;
 }
 .left-contact{
-    position: relative;
     /* position: absolute; */
     /* margin-top: 3rem; */
     /* margin-left: 7rem; */
@@ -779,25 +806,22 @@ textarea{
     .contact .submitbtn{
         margin-top: 11rem;
         margin-left: 0;
-    } 
+    }
+}
+@media (max-width: 1040px){
     .contact .submitbtn{
         margin-top: 0rem;
     }
 }
-@media (max-width: 620px){
-    .left-contact{
-        width: 100%;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .left-contact form input{
-        width: 80%;
-    }
-    .left-contact form textarea{
-        width: 450px;
-        display: block;
+@media (max-width: 600px){
+    form{
+        width: 400px;
+        height: 500px;
     }
     
+    iframe{
+        width: 350px;
+    }
 }
 
 
@@ -805,9 +829,10 @@ textarea{
 /* Footer section start  */
 .footer{
     position: relative;
+    margin-bottom: 0;
     /* width: 100%; */
     padding-bottom: 5px;
-    background-color: #333;
+    background-color: rgb(15, 15, 15);
     
     font-family: 'DM Serif Text', serif;
 }
@@ -863,17 +888,52 @@ textarea{
        width: 0;
        height: 0;
     }
-    .subfooter{
-        /* margin-right: 6rem; */
-    }
 }
 @media (max-width: 500px){
-    .subfooter{
-        /* margin-right: 4rem; */
-    }
     #boxl{
         border-left: 1px solid white;
         padding-left: 1rem;
         margin-left: 1rem;
+    }
+    .basefooter .credit{
+        width: 100%;
+        text-align: start;
+    }
+}
+
+
+/* scroll link  */
+.top-link {
+    font-size: 1.24rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background: blue;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    animation: bounce 2s ease-in-out infinite;
+    text-shadow: 2px 2px red;
+    box-shadow: 1px 1px 9px 2px rgb(0, 26, 255);
+    visibility: hidden;
+    z-index: -100;
+    
+}
+.show-link {
+    visibility: visible;
+    z-index: 100;
+}
+@keyframes bounce {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.8);
+    }
+    100%{
+        transform: scale(1);
     }
 }
